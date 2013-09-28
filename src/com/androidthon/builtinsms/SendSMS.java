@@ -25,7 +25,7 @@ public class SendSMS  extends Activity{
 			public void onClick(View arg0) {
 				
 				try {
-					//startign built in sms activity
+					//startign built in sms activity and parsing message to it
 					Intent send = new Intent(Intent.ACTION_VIEW);
 					send.putExtra("sms_body", "We are Sending SMS using the Built-in-SMS Application");					
 					send.setType("vnd.android-dir/mms-sms");
